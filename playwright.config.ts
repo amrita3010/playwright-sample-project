@@ -6,14 +6,15 @@ export default defineConfig({
     testDir: './tests',
   timeout: 600000,
  reporter: [
+    ['json', { outputFile: 'test-results/results.json' }],
     ['line'],
     ['html'],
     ['allure-playwright'],
-    ['ortoni-report', {
-      projectName: "Sample Project",
-      authorName: "Amrita",
-      testType: "test"
-    }]
+    // ['ortoni-report', {
+    //   projectName: "Sample Project",
+    //   authorName: "Amrita",
+    //   testType: "test"
+    // }]
   ],
   use: {
     headless: false,

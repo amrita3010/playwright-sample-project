@@ -21,10 +21,10 @@ test('Print Test3 description', async () => {
   console.log('Print Test3 description:');
 });
 
-test.skip('Print Test4 description', async () => {
+test('Print Test4 description', async () => {
   console.log('Print Test4 description:');
 });
 
-test('Print Test5 description', async () => {
+test.skip('Print Test5 description', async () => {
   console.log('Print Test5 description:');
 });
